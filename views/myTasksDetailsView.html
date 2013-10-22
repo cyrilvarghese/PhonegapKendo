@@ -1,0 +1,38 @@
+<div data-role="view" id="myTasksDetailsView" data-show="app.myTasksDetailsView.viewModel.getmyTasksDetailsParamDetails">
+    <header data-role="header">
+        <div data-role="navbar" id="myTasksDetailViewNavBar">
+            <a data-align="left" data-role="button" class="backButton" href="views/tasksView.html" >&#60</a>
+            <span data-role="view-title">My Task Details Page</span>
+        </div>
+    </header>
+    <div class="myTaskssDetailsContent" data-role="content">
+        <div id="myTasksDetailsDataView" class="myTasksDetailsDataView"></div>
+    </div>
+    <div class="overlay"></div>
+    <footer data-role="footer" id="ActionBarmyTasksDetails" class="ActionBar" data-id="Home-Layout-footer">
+    	<div id="myTasksDetailsActionBarLinks"></div>
+    </footer>
+</div>
+<script id="myTasksDetailsDataTemplate" type="text/x-kendo-template">
+	
+    <div class="clearfix">
+    	<span class="project-icon">${XPROJCT.ProjectName}(${XPROJCT.ProjectCode})</span>
+    </div>
+    <article class="task-discription"><p>${XPROJCT.Description}</p></article>
+	<div class="clearfix">
+		<span class="time-icon">${XPROJCT.CreateDate}</span>
+	</div>
+	<div class="project-header clearfix">
+    	<span class="project-status active" style="background:padding-left:25px;padding-top: 2px;">Active</span>
+    </div>
+</script>
+<script id="myTasksDetailsActionBarToolTemplate" type="text/x-kendo-template">
+	#
+		//var actionValue = Result["d8bf6ab7-21a2-4964-a2cf-e7a1db097f08_RouteTo"];
+		//alert(actionValue);
+		var ActionName = ActionName;
+		var ActionId = ActionId;
+		var ActionLink = ActionName+"_"+ActionId;
+	#
+	<a class="action-${ActionName}" id="${ActionId}" onclick="app.myTasksDetailsView.viewModel.triggerMyTasksDetailsActionLink('${ActionLink}')">${ActionName}</a>
+</script>

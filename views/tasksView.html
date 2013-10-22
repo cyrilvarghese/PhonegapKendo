@@ -1,0 +1,102 @@
+<div data-role="view" id="taskView" 
+     data-model="app.taskView.viewModel" 
+     data-show="app.taskView.viewModel.show"
+     data-hide="app.taskView.viewModel.hide"
+     data-init="app.taskView.viewModel.myTaskListViewTemplatesInit">
+    <div class="myTaskViewPage" data-role="content">
+
+        <div id="taskListView">
+            <a data-role="button" data-click="app.taskView.viewModel.getLastPage">last</a>
+            <a data-role="button" data-click="app.taskView.viewModel.getNextPage">NExt</a>           
+         
+
+            <input type="button" value="click" class="selectListProject" >
+            <ul id="myTaskCustomListView"  data-role="listview" data-identifier="myTaskCustomListView"></ul>
+        </div>
+
+    </div>
+    <div class="overlay"></div>
+    <footer data-role="footer" id="ActionBar"  class="ActionBar noneElement" data-id="Home-Layout-footer">
+        <div class="actionSheetWrapper">
+            <a href="#">Action 1</a>
+            <a href="#">Action 2</a>
+            <a href="#">Action 3</a>
+        </div>
+        <div id="myTaskActionBarLinks"></div>
+        <!-- <a href="#" class="action-approve">Approve</a>
+        <a href="#" class="action-reject">Reject</a>
+        <a href="#" class="action-suffle">shuffle</a>
+        <a href="#" class="action-more">more</a> -->
+        <!-- <ul id="myTaskActionBarLinks"></ul> -->
+    </footer>
+
+    <script id="myTaskListViewTemplate" type="text/x-kendo-template">
+        # 
+        var projectCreatedDate = new Date(DateCreated.substring(0,10));
+		projectCreatedDate = projectCreatedDate.toString().substring(3,15);
+        var projectDueDate =  new Date(DueDate.substring(0,10));
+		projectDueDate = projectDueDate.toString().substring(3,15);
+		var showProjectStatus;
+		if(FormStatus)
+			showProjectStatus = "";
+		else
+			showProjectStatus = "noneElement";
+
+			
+        #
+        <div class="myTaskList">
+        	<input type="checkbox" onclick="app.taskView.viewModel.triggerActionBar(${MapID})" id="checkbox_${MapID}" data-FormID="${FormID}" data-PID="${PID}" data-ParentID="${ParentID}" data-FormInstanceID="${FormInstanceID}">
+        	<label for="checkbox_${MapID}" class="noneElement"></label>
+        	<a class="km-listview-anchor" id="" href="\\#views/myTasksDetailsView.html">
+        		<span class="km-listview-link clearfix">
+            		<h3>${ProjectName}</h3>
+					<span class="time-icon">Details: ${FormKey}</span>FormKey
+        			<span class="time-icon">CreatedDate: ${projectCreatedDate}</span>
+					<span class="time-icon">DueDate: ${projectDueDate}</span>
+					
+<span class="project-icon ${showProjectStatus}">Status: ${FormStatus}</span>
+        		</span>
+        	</a>
+        </div>
+    </script>
+
+<!-- <script id="myTaskActionBarToolTemplate1" type="text/x-kendo-template">
+		#
+			var dataLength = data.length;
+			console.log(dataLength);
+			var moreLink = false;
+			if(dataLength > 3){
+				moreLink = true;
+			}
+			console.log(moreLink);
+			var actionLinks=""; 
+		#
+        # for (var i = 0; i < data.length; i++) { #
+		#if(i < 1){#
+            <a class="">#= data[i]["ActionName"] #</a>
+        # }else{ #
+			
+		# }} #
+       
+</script> -->
+
+	<script id="myTaskActionBarToolTemplate" type="text/x-kendo-template">
+		#
+			//var actionValue = Result["d8bf6ab7-21a2-4964-a2cf-e7a1db097f08_RouteTo"];
+			//alert(actionValue);
+
+			var ActionName = ActionName;
+			var ActionId = ActionId;
+			var ActionLink = ActionName+"_"+ActionId;
+        #
+		<a class="action-${ActionName}" id="${ActionId}" onclick="app.taskView.viewModel.triggermyTasksListActionLink('${ActionLink}')">${ActionName}</a>
+	</script>
+
+    <script type="text/javascript" charset="utf-8">
+        
+    </script>
+    <style>
+        #myTaskList a{
+            text-decoration:none;
+        }
+    </style>

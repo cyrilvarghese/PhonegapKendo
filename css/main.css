@@ -1,0 +1,891 @@
+.logo {
+    margin: 71px auto 56px;
+}
+.km-ios7 .logo {
+    margin: 116px auto 56px;
+}
+.logo img{
+    margin: 0px auto;
+    display:block;
+}
+.km-android, 
+.km-android .km-content,
+.km-ios, 
+.km-ios .km-content {
+    background: #DBDBDB;
+}
+.login-box {
+    background: #fff;
+    border: 1px solid #b2b2b2;
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,0.09);
+    box-shadow: 0 0 12px rgba(0,0,0,0.09);
+}
+.loginLabel {
+    border-bottom: 1px solid #b7b7b7;
+    padding: 2px;
+}
+.loginLabel:last-child {
+    border: 0;
+}
+.loginLabel>div {
+    padding-left: 30px;
+}
+.km-android .loginLabel input.loginTxtbx,.km-android .search-icon input.searchTxtbx,
+.km-android .search-icon input.searchTxtbx:focus{
+    color: #666;
+    border: none;
+    background-image:none;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+.loginLabel>div.user-icon {background: url('../Resources/user.png') no-repeat 12px 50% ;}
+.loginLabel>div.password-icon {background: url('../Resources/password.png') no-repeat 12px 50% ;}
+.loginLabel>div.server-icon {background: url('../Resources/server.png') no-repeat 10px 50% ;}
+.loginTxtbx  
+{
+    width:100%;
+    border: 0px ;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 16px;
+}
+
+.divButton{
+    padding:30px 0;
+}
+.divButton .km-button
+{
+    padding: 11px;
+}
+
+#loginForm ul {
+    list-style-type: none;
+}
+.km-content.km-scroll-wrapper {
+    width:100%;
+ 
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ 
+.loginLabel label
+{
+    font-size:14;
+    font-family: arial;
+
+}
+
+.loginButtton  {
+    width: 100%;
+    margin: 0px 10 0 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius:8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #16181B;
+
+}
+
+.km-ios .km-view .km-navbar {
+    background-color: rgb(51, 51, 51);
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0, rgba(0,0,0,.2)),color-stop(.5, rgba(0,0,0,.4)),color-stop(.5, rgba(0,0,0,.5)),color-stop(1, rgba(0,0,0,.8)));
+    background-image: -moz-linear-gradient(50% 0,50% 100%,rgba(0,0,0,.2),rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.8));
+    background-image: -ms-linear-gradient(50% 0,50% 100%,rgba(0,0,0,.2),rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.8));
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.divButton .loginButtton {
+    background: #00a0dc;
+    color: #fff;
+    text-shadow: 1px 1px 0 #1ebefa;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0 #000;
+    -moz-box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #000;
+    font-size: 18px;
+    line-height: 1em;
+    background-image: none !important;
+    background-color: #00a0dc !important;
+    text-align: center;
+}
+.km-ios6 *:not(.km-tabstrip):not(.km-buttongroup)>.km-button:active {
+    background: #0089ba;
+}
+
+.km-content.login-page {
+    background-color: rgb(255, 255, 0);
+    background: url('../Resources/bg.jpg') no-repeat fixed center;
+    background-size: 100% auto;
+          padding: 0 10px ;
+}
+[data-role="navbar"] .km-view-title {
+    height: 72px;
+    background: #2d2d2d;
+    background-image: none;
+    line-height: 1.3em;
+}
+
+[data-role="navbar"] .backButton.km-widget.km-button{
+    background: none;
+    background-image: none;
+    background-color: none;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid transparent;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -4px;
+    font-family: Helvetica;
+    color: #ffffff;
+    padding:0.01em 0.8em;
+    line-height: 32px;
+    text-indent: -99999px;
+    background: url('../Resources/back-icon.png') no-repeat center;
+}
+[data-role="navbar"] .backButton.km-widget.km-button:active,
+[data-role="navbar"] .backButton.km-widget.km-button.active {
+    border: none;
+    background: url('../Resources/back-icon.png') no-repeat center;
+}
+[data-role="navbar"] .navButton.km-widget.km-button,
+[data-role="navbar"] .settingsButton.km-widget.km-button {
+    background: none;
+    background-image: none;
+    background-color: none;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 1px solid transparent;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Helvetica;
+    color: #9d9e9e;
+    line-height: 37px;
+    padding: 19px;
+    padding-bottom: 0;
+    width: 33%;
+    padding-top: 34px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+[data-role="navbar"] .settingsButton.km-widget.km-button {
+    float: right;
+}
+
+[data-role="navbar"] .navButton.km-widget.km-button.active,
+#projectDetailView [data-rel="drawer"] {
+    background-color: #3399cc;
+    color: #fff;
+
+
+}
+[data-role="navbar"] .navButton.km-widget.km-button:active {
+    background-color:#111;
+}
+[data-role="navbar"] .km-view-title .backButton.km-widget.km-button:active,
+[data-role="navbar"] .km-view-title .settingsButton.km-widget.km-button:active {
+    background: none;
+    background-image: none;
+    background-color: none;
+    color: #9d9e9e;
+}
+
+/*
+* Below CSS class for android to render the header panel in the top like ios, 
+* basically android will rendered the header in bottom of the screen 
+*/
+.km-android div.km-view {
+    -webkit-box-direction: normal;
+    flex-direction:column;
+    -webkit-flex-direction:column ;
+}
+
+/*
+* By default the NavBar View Title is visible only in iOS and hidden in the rest of the platforms. 
+* In order to be visible on a specific platform, a single CSS rule
+*/
+.km-android .km-navbar .km-view-title,.km-ios .km-navbar .km-view-title  /* After Q2 2012 SP1 */
+{
+    visibility: visible;
+    border-bottom:5px solid #3399cc;
+}
+
+
+
+/*
+* Below part to show settings menu links
+*/
+
+#settingsMenuOption li a:hover
+{
+    background:#155FB0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a.dropdown 
+{
+    color: #555;
+    margin: 3px -22px 0 0;
+    width: 143px;
+    position: relative;
+    height: 17px;
+    text-align:left;
+}
+#settingsMenuOption
+{
+    background: #fff;
+    position: absolute;
+    top: 49px;
+    right: 2px;
+    z-index: 100;
+    width: 135px;
+    display: none;
+    padding:0;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+#settingsMenuOption li a 
+{
+    color: #555555;
+    display: block;
+    font-family: arial;
+    font-weight: bold;
+    padding: 9px 15px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+#settingsMenuOption li a:hover
+{
+    background:#155FB0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.root
+{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    font-size: 11px;
+    padding: 0 0 0 0px;
+    border-top:1px solid #dedede;
+} 
+cursor:pointer{
+    font-size: 11px;
+    line-height: 16px;
+    color: #555;
+    position: absolute;
+    z-index: 110;
+    display: block;
+    padding: 11px 0 0 20px;
+    height: 28px;
+    width: 121px;
+    margin: -11px 0 0 -10px;
+    text-decoration: none;
+    background: url(icons/arrow.png) 116px 17px no-repeat;
+    cursor:pointer;
+}
+/* Settings menu part link ends */
+
+/** My Task page css  starts*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+.task-listing.km-list {
+    border: 0;
+    margin-bottom: 0px;
+
+}
+.km-ios .km-insetcontent {
+    background: none;
+}
+#myProjectCustomListView .projectItem {
+    margin:0px;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+    display: block;
+}
+#myProjectCustomListView.edit .projectItem {
+    margin-left: 45px;
+    display: block;
+}
+#myProjectCustomListView.edit
+.km-content.myTaskViewPage {
+    background-color: rgb(219,219,219);
+    background-size: 100% auto;
+}
+.myTaskViewPage .task-listing li {
+    background-color: #fff;
+    -webkit-border-radius: 0 0 0 0 !important;
+    -moz-border-radius: 0 0 0 0 !important;
+    border-radius: 0 0 0 0 !important;
+    height: auto;
+}
+.myTaskViewPage .task-listing li.active {
+    background: #daf1fc;
+}
+#myTaskCustomListView li label.noneElement,
+#myProjectCustomListView  label.noneElement {
+    left: 5px;
+    position: absolute;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -ms-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    transition: left 0.5s;
+}
+#myTaskCustomListView.edit li label.noneElement,
+#myProjectCustomListView.edit label.noneElement {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c2c2c2;
+    left: 17px;
+    top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#myTaskCustomListView  [type="checkbox"],
+#myProjectCustomListView [type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    z-index: 1;
+    width: 21px;
+    height: 21px;
+    margin: 0px;
+}
+[type="checkbox"]:checked+label.noneElement {
+    background: url('../Resources/check.png') no-repeat 50% 50% #fff;
+}
+#ActionBar.km-footer,
+#ActionBarProjectDetail.km-footer,
+#ActionBarmyTasksDetails.km-footer,
+#ProjectActionBar.km-footer {
+    background: #f9f9f9;
+    border-top: 1px solid #adadae;
+    text-align: center;
+    padding: 8px 0;
+    display:block;
+    -webkit-box-shadow: 0 -5px 5px rgba(0,0,0,.06);
+    -moz-box-shadow: 0 -5px 5px rgba(0,0,0,.06);
+    box-shadow: 0 -5px 5px rgba(0,0,0,.06);
+    margin-bottom: 0px;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+
+}
+#ActionBar.noneElement,
+#ActionBarProjectDetail.km-footer.noneElement,
+#ProjectActionBar.km-footer.noneElement{
+    margin-bottom: -42px;
+    display: block;
+}
+#ActionBar.km-footer>a,#ActionBarProjectDetail.km-footer>a,
+#ProjectActionBar.km-footer>a,
+#myTaskActionBarLinks>a,
+#myTaskDetailsActionBarLinks>a{
+    display: inline-block;
+    width: 23%;
+    height: 25px;
+    text-indent: -9999px;
+}
+#ActionBarProjectDetail.km-footer a.action-approve,#ActionBar.km-footer a.action-approve, #ProjectActionBar.km-footer a.action-approve{background: url('../Resources/approve.png') no-repeat 50% 50%;}
+#ActionBarProjectDetail.km-footer a.action-reject,#ActionBar.km-footer a.action-reject, #ProjectActionBar.km-footer a.action-reject{background: url('../Resources/reject.png') no-repeat 50% 50%;}
+#ActionBarProjectDetail.km-footer a.action-suffle,#ActionBar.km-footer a.action-suffle, #ProjectActionBar.km-footer a.action-suffle{background: url('../Resources/suffle.png') no-repeat 50% 50%;}
+#ActionBarProjectDetail.km-footer a.action-more,#ActionBar.km-footer a.action-more, #ProjectActionBar.km-footer a.action-more{background: url('../Resources/more.png') no-repeat 50% 50%;}
+
+#myTaskActionBarLinks a.action-Submit, #myTaskDetailsActionBarLinks a.action-Submit{background: url('../Resources/approve.png') no-repeat 50% 50%;}
+#myTaskActionBarLinks a.action-RouteTo, #myTaskDetailsActionBarLinks a.action-RouteTo{background: url('../Resources/suffle.png') no-repeat 50% 50%;}
+
+#myTaskCustomListView.edit li a {
+    margin-left: 45px;
+}
+#myTaskCustomListView li a.km-listview-anchor {
+    display: block;
+    text-decoration: none;
+    -webkit-transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+.myTaskViewPage .task-listing.edit .km-listview-link:after {
+    right: -1rem;
+}
+.task-listing h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.2em 0;
+    color: #333;
+}
+.km-ios .km-listgroupinset .km-group-title {
+    font-weight: normal;
+    text-indent: 0;
+    font-size: 14px;
+}
+.km-listview-wrapper .km-group-title h4 {
+    margin: 0;
+    font-weight: normal;
+    text-indent: 0;
+    padding-left: 21px;
+    background: url('../Resources/change-management.png') no-repeat 0 50%;
+    text-transform: none;
+    font-size: 1.3em;
+}
+.km-android .km-state-active .km-listview-link,
+.km-ios .km-state-active .km-listview-link  {
+    background: #daf1fc;	
+}
+.km-android .km-list,
+.km-ios .km-list {
+    margin-bottom: 0;
+}
+.km-list li .myTaskList a {
+    display: block;
+    text-decoration: none;
+}
+.km-list li .myTaskList a span,
+.km-list li .myTaskList a {
+    height: auto;
+}
+.km-android .km-group-title {
+    padding: 1em 0 0.1em;
+}
+#myTaskCustomListView .km-group-container .km-list li {
+    padding: 0;
+}
+#myTaskCustomListView .km-group-container .km-list li span.km-listview-link {
+    margin: 0;
+    padding: 0.5em 0.7em 1.4em;
+}
+.km-list li .myTaskList h3 {
+    color: #333;
+    margin: 0 0 0.3em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.task-listing .km-listview-link  {
+    display: block;
+}
+.task-listing p {
+    margin: 0;
+}
+.project-icon,
+.time-icon 
+{
+    font-size: 13px;
+    float:left;
+    padding-left:18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.project-icon {background: url('../Resources/projects.png') no-repeat 0 50% ; font-weight: normal; color: #3399cc; margin-right: 10px !important;}
+
+.time-icon {background: url('../Resources/time.png') no-repeat 0 50% ;font-weight: normal; color: #999999}
+
+.noneElement{
+    display:none;
+}
+.search-area{
+    position: relative;
+    background-color: rgb(219,219,219);
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-top:4px;
+
+}
+input#selectList,
+input.selectListProject {
+    width: 45px;
+    height: 35px;
+    background: url("../Resources/edit.png") no-repeat 12px 6px;
+    border: 0;
+    text-indent: -99999px;
+    padding: 6px 0 0 0;
+    position:absolute;
+    top: 16px;
+    right: 0;
+}
+input#selectList.active,
+input.selectListProject.active{
+    width: 45px;
+    height: 35px;
+    background: url("../Resources/edit-active.png") no-repeat 12px 6px;
+    border: 0;
+    text-indent: -99999px;
+    padding: 6px 0 0 0;
+    position:absolute;
+    top: 16px;
+    right: 0;
+}
+#itemPosting .km-group-title .km-text{
+    background: url("../Resources/item-posting.png") no-repeat 0 6px;
+    padding-left:24px;
+}
+#changeManagement .km-group-title .km-text{
+    background: url("../Resources/change-management.png") no-repeat 0 6px;
+    padding-left:24px;
+}
+/* My Task page css ends */
+
+/* Project details page */
+.km-content.projectdetailsContent,
+.km-content.myTaskssDetailsContent{
+    padding: 10px;
+    background-color: rgb(219,219,219);
+}
+
+.projectDetailView, .myTasksDetailsDataView {
+    background-color: rgb(255,255,255);
+    background-size: 100% auto;
+    padding: 10px;
+}
+/*project view changes*/
+
+.editCheckboxBg
+{
+    border:1px solid black;
+    position: relative;
+    display: block;
+    top: 36%;
+    height: 14%;
+    width: 15px;
+    display:none;
+}
+.selected
+{
+    background:black no-repeat;
+}
+.km-content.projects-page,.km-content.myTaskViewPage {
+    background-color: rgb(219,219,219);
+padding: 0 10px;
+    background-size: 100% auto;
+}
+
+div.search-icon {
+    background: url('../Resources/search.png')   no-repeat 98% 50% ;
+    border: 1px solid #b7b7b7;
+    background-color: white;
+    width:83%;
+    padding: 2px;
+    border-radius: 6px;
+    float:left;
+
+}
+div#projListView
+{
+    clear:both;
+    padding-top: 5px;
+    position:relative;
+}
+
+#editBtn{
+    border: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0 #000;
+    -moz-box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #000;
+    height:30px;
+    height: 30px;
+    width: 40px;
+    background: url('../Resources/action.png') no-repeat;
+    padding: 0px;
+    background-position: 8px 5px;
+}
+.editCheckboxBg{
+    float:left;
+
+}
+div.item-info{
+    height:33%
+}
+.km-list>li{
+    height:130px;
+    border-bottom: 1px solid rgb(219,219,219);
+}
+.projectItem{
+    text-decoration: none;
+}
+div.item-info>span{
+    display: inline-block;
+    font-size: 13px;
+    margin: 5px 5px 5px 0;
+    padding-bottom: 5px;
+    font-weight: normal;
+    color: #666;
+
+}
+.editCheckboxBgWrapper{
+    height: 100%;
+    float: left;
+
+}
+#formattedDate{
+    background: url('../Resources/clock_date.png') no-repeat;   
+    background-position: 72px -1px;
+
+}
+.owner-icon {
+    background: url('../Resources/user.png') no-repeat 0 50%;
+    -webkit-background-size: 11px 11px;
+    background-size: 11px 11px;
+    padding-left: 20px;
+    color: #999;
+    margin-left:10px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    vertical-align: top;
+}
+.km-ios .km-list > li,
+.km-android .km-list > li {
+    background: #fff;
+    height: auto;
+}
+.km-ios .km-list > li.active,
+.km-android .km-list > li.active,.km-ios .km-list > li.active {
+    background: #daf1fc;
+}
+.km-list {
+    border: 1px solid #B1B3B8;
+}
+.km-list .item-info02 {
+    display: block;
+}
+.projectItem .project-header .project-title {
+    font-size: 18px;
+    color: #333;
+    overflow: hidden;
+    max-width: 80%;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.projectItem .project-header .project-status {
+    font-size: 12px;
+    vertical-align: top;
+    font-weight: normal;
+}
+.projectItem .project-header .project-status.active,
+.project-header .project-status.active {
+    background: url(../Resources/green_check_red_cross.png) 6px 2px no-repeat;
+    color: #339933;
+}
+.projectItem .project-header .project-status.inactive,
+.project-header .project-status.inactive {
+    background: url(../Resources/green_check_red_cross.png) 6px 2px no-repeat;
+    color: #993333;
+}
+/*project view ends*/
+
+/*Task Detail View*/
+#projectDetailsListView.km-list > li {
+    height: auto;
+    background: #fff;
+    border: 1px solid #b2b2b2;
+}
+#projectDetailsListView.km-list > li div.clearfix {
+    display: block;
+    padding: 1em 0 0.5em;
+}
+.task-discription p {
+    margin: 1em 0;
+    font-weight: normal;
+    color: #666;
+    font-size: 12px;
+}
+.task-discription p:first-child {
+    margin-top: 0;  
+}
+#projectDetailView [data-role="navbar"] .km-view-title ,
+#myTasksDetailsView [data-role="navbar"] .km-view-title{
+    text-align: left;
+    padding-left: 105px;
+}
+#projectDetailView [data-role="navbar"] .km-view-title span,
+#myTasksDetailsView [data-role="navbar"] .km-view-title span {
+    display: block;
+    height: 72px;
+    white-space: nowrap;
+    margin-right: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#projectDetailView [data-role="navbar"] .km-view-title span:before,
+#myTasksDetailsView [data-role="navbar"] .km-view-title span:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    height: 72px;
+    width: 1px;	
+}
+div.actionSheetWrapper
+{
+    background: #f9f9f9;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 47px;
+    display:none;
+    border-radius: 5px;
+
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+div.actionSheetWrapper a{
+    display: block;
+    text-decoration: none;
+    height:25px;
+    border-bottom:1px solid gray;
+    padding-top:5px;
+    font-weight: normal;
+    color: #3399cc;
+    font-size:16px;
+
+}
+div.actionSheetWrapper a:last-child {
+    border-bottom: 0;
+}
+
+/*kendo resets*/
+.action-more{border: 0px;}
+[data-role="navbar"].km-android .km-view .km-widget{
+    flex-direction:column;
+    -webkit-flex-direction:column ;
+}
+.km-android .km-listview-wrapper,.km-android .km-navbar,
+.km-ios .km-listview-wrapper,.km-ios .km-navbar
+
+{
+    padding: 0px;
+
+}
+
+.km-android input.searchTxtbx,.km-ios input.searchTxtbx{
+    color: #666;
+    border: none;       
+    background-image:none;
+}
+.km-android .km-group-title , .km-ios .km-group-title 
+{
+    line-height: 2;
+}
+.km-android header.km-header
+{
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+
+/*to display the arrow in the list item for android also*/
+.km-android .km-listview-link:after, .km-android .km-listview-label:after{
+    display: block;
+}
+
+
+.navButton.dashboards.km-widget .km-button,
+.navButton.dashboards.km-widget.km-button {
+    background: url('../Resources/dashboard@2x.png') 50% 20% no-repeat;
+    background-size:auto 32%;
+}
+
+.navButton.tasks.km-widget .km-button,
+.navButton.tasks.km-widget.km-button {
+    background: url('../Resources/task@2x.png') 50% 20% no-repeat;
+    background-size:auto 32%;
+
+} 
+.navButton.projects.km-widget .km-button,
+.navButton.projects.km-widget.km-button {
+    background: url('../Resources/project@2x.png') 50% 20% no-repeat;
+    background-size:auto 32%;
+}
+.km-android .km-listview-wrapper form .km-filter-wrap>input{
+    color: #666;
+    border: none;
+    background-image:none;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+.km-filter-wrap{
+  
+    border: 1px solid #b7b7b7;
+    background-color: white;
+    width:83%;
+    padding: 2px;
+    margin:0px;
+    border-radius: 6px;
+
+}
+.km-filter-form{
+    padding: .5em .5em;
+}
+#EditViewContent .km-scroll-container,#EditViewContent iframe{
+    height: 86%;
+    width: 99%;
+}

@@ -1,0 +1,101 @@
+<div data-role="view" id="projectsView" 
+     data-model="app.projectView.viewModel" 
+     data-show="app.projectView.viewModel.show"
+     data-hide="app.projectView.viewModel.hide"
+     data-init="app.projectView.viewModel.myProjectListViewTemplatesInit">
+    <div class="projects-page" data-role="content">
+           <div id="projListView">
+            <input type="button" value="click" class="selectListProject" >
+            <ul id="myProjectCustomListView" data-identifier="myProjectCustomListView"></ul>
+           </div>
+     </div>
+ 
+<div class="overlay"></div>
+<footer data-role="footer" id="ProjectActionBar" class="ActionBar noneElement" data-id="Home-Layout-footer">
+    <div class="actionSheetWrapper">
+        <a href="#">Action 1</a>
+        <a href="#">Action 2</a>
+        <a href="#">Action 3</a>
+    </div>
+    <a href="#" class="action-approve">Approve</a>
+    <a href="#" class="action-reject">Reject</a>
+    <a href="#" class="action-suffle">shuffle</a>
+    <a href="#" id="moreBtn" class="action-more">more</a>
+
+</footer>
+
+
+ 
+
+<script id="myProjectCustomListViewTemplate" type="text/x-kendo-template">
+    #
+	var projectStartDate = new Date(StartDate.substring(0,10));
+	projectStartDate = projectStartDate.toString().substring(3,15);
+	var projectEndDate = new Date(EndDate.substring(0,10));
+	projectEndDate = projectEndDate.toString().substring(3,15);
+
+	var statusString = "true"; //IsActive;
+
+    if( statusString.toLowerCase() == "true"){
+    	statusClass="active";
+    	statusText="Active";
+    }
+    else{
+    	statusClass="inactive";
+    	statusText="Inactive";
+    }
+    #
+
+    <input type="checkbox" onchange="triggerProjectActionBar(${ProjectId})" id="checkbox_${ProjectId}"><label for="checkbox_${ProjectId}" class="noneElement"></label>
+
+    <a class="projectItem"   id="${ProjectId}" href="\\#views/projectDetailView.html?pid=${ProjectId}&pname=${ProjectName}">
+    <div class="km-listview-link" data-role="touch"> 
+
+    <div class="project-header">
+    <span class="project-title" > ${ProjectName} (${ProjectCode})</span>
+    <span class="project-status ${statusClass}" style="background:;padding-left:25px;padding-top: 2px;">Status: ${statusText}</span>
+    </div>
+    <div class="item-info">
+    <!-- <span>Status :${StatusId}</span>-->
+	
+    </div>
+    <div class="item-info02">
+    <span class="time-icon">
+    <span>Start Date: ${projectStartDate}</span>
+    </span>
+	<span class="time-icon">
+    <span>End Date: ${projectEndDate}</span>
+    </span>
+  
+    </div>
+    </div>
+    </a>
+</script>
+<script type="text/javascript" charset="utf-8">
+    function triggerProjectActionBar(id) {
+
+        $this = $('#myProjectCustomListView [type="checkbox"]#checkbox_' + id)
+        if ($this.is(':checked')) {
+            $this.closest('li').addClass('active');
+        } else {
+            $this.closest('li').removeClass('active');
+        }
+
+
+        actionBar = false;
+
+        $('#myProjectCustomListView li [type="checkbox"]').each(function() {
+            if ($(this).is(':checked')) {
+                actionBar = true;
+            }
+        });
+        if (actionBar == true) {
+            $('#ProjectActionBar').removeClass('noneElement');
+        } else {
+            $('#ProjectActionBar').addClass('noneElement');
+            $('.actionSheetWrapper').fadeOut();
+            $('.overlay').fadeOut();
+        }
+    }
+</script>
+</div>
